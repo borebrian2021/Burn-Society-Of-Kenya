@@ -1,0 +1,13 @@
+﻿.ovatheme_form .ovael_recaptcha_wrapper.recaptcha_v2 {
+    margin-bottom: 20px;
+}
+
+.ovatheme_form .submit-button {
+    position: relative;
+    z-index: 99;
+}
+
+.ovatheme_form .ovael_center .ovael_recaptcha_wrapper {
+    display: flex;
+    justify-content: center;
+}
