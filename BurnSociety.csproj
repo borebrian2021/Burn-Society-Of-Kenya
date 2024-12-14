@@ -7,9 +7,6 @@
   <ItemGroup>
     <Content Include="tailwind.config.js" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="wwwroot\css\index.css.map" />
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="clean" Version="5.0.0" />
