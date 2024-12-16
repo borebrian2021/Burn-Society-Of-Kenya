@@ -41,7 +41,12 @@
 <!--====== PRELOADER PART ENDS ======-->
 <!--====== HEADER PART START ======-->
 <body>
-
+    <div id="preloader">
+        <div class="preloader">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
 <header class="header_area">
     <div class="header_top">
         <div class="container">
@@ -58,7 +63,7 @@
 
                 <div class="header_info d-none d-md-block">
                     <ul>
-                        <li><img src="assets/images/call.png" alt=""><a href="#">+254 123 456</a></li>
+                            <li><img src="assets/images/call.png" alt=""><a href="tel:+254724888666">+254724888666</a></li>
                         <li><img src="assets/images/mail.png" alt=""><a href="#">info@burn.co.ke</a></li>
                         <li><img src="assets/images/heand.png" alt=""><a href="#">Register for Conference</a></li>
                     </ul>
@@ -94,8 +99,8 @@
                             <a class="" href="/Membership">Membership </a>
 
                         </li>
-                        <li>
-                            <a class="" href="index.html">About Us </a>
+                       <li>
+                            <a class="" href="/Events">Events </a>
 
                         </li>
                         <li>
@@ -107,13 +112,14 @@
                             </ul>
                         </li>
                       
-                        <li><a href="event.html">Contacts Us</a></li>
+                        <li><a href="/ContactUs">Contacts Us</a></li>
                       
                     </ul>
                 </div> <!-- navbar collapse -->
 
                 <div class="navbar_btn d-none d-sm-block">
-                    <a class="main-btn" href="#"><i class="fa fa-heart"></i>Secure seat</a>
+                   
+                        <button class="main-btn" data-toggle="modal" data-target="#myModal"><i class="fa fa-heart" data-toggle="modal" data-target="#myModal"></i>Register Conference</button>
                 </div>
 
             </nav> <!-- navbar -->
@@ -203,6 +209,32 @@
         </div>
     </div>
 </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade " id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header custome_header_bg_color">
+                    <h4 class="text-white font-weight-light">Conference registration</h4>
+
+                </div>
+                <div class="modal-body ">
+                    <h5>
+                        Dear Visitor, The registration section will be open soon.
+
+                    </h5>
+                </div>
+                <div class="modal-footer">
+                    <button class="main-btn btn-sm" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
 </body>
 <script src="/assets/js/vendor/jquery-1.12.4.min.js" asp-append-version="true"></script>
 <script src="/assets/js/vendor/modernizr-3.7.1.min.js" asp-append-version="true"></script>

@@ -5092,3 +5092,7 @@ p {
     height:50px;
     width:100px;
 }
+.custome_header_bg_color {
+    background-color: #ff2744;
+    color: white !important;
+}
