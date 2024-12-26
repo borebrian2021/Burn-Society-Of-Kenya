@@ -76,10 +76,7 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		///<summary>
 		/// Conference Date: Please select date of the event
 		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.5.2+3431f76")]
-		[ImplementPropertyType("conferenceDate")]
-		public virtual global::System.DateTime ConferenceDate => this.Value<global::System.DateTime>(_publishedValueFallback, "conferenceDate");
-
+	
 		///<summary>
 		/// Event Location: Please enter Event Location
 		///</summary>

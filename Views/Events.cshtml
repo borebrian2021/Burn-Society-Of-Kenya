@@ -1,78 +1,89 @@
-﻿@using Umbraco.Cms.Web.Common.PublishedModels;
-@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.Events>
-@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
-@{
-	Layout = null;
+﻿@{
+    Layout = "MasterPage.cshtml";
 }
-<section class="page_banner bg_cover" style="background-image: url(assets/images/slider-1.jpg)">
+<section class="page_banner bg_cover" style="background-image: url(assets/images/conference.webp)">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <div class="page_banner_content text-center">
-                    <h3 class="page_title">Our Event</h3>
+                    <h3 class="page_title">Upcoming Events</h3>
                     <ul class="breadcrumb justify-content-center">
-                        <li><a href="#">Home</a></li>
+                   
+                        <h5 style="font-size:20px;color:#ffffff">Pan African Burn Society Conference - South Africa</h5>
+                        <h5 style="font-size:16px;color:#ffffff">20th -23rd October 2025</h5></br>
+                        <</br>
+
+                            <button class="main-btn" data-toggle="modal" data-target="#myModal" style="background-color:transparent;border:white solid 1px;color:white" >Register Conference</button>
+                       
+
                     </ul>
                 </div> <!-- page banner content -->
             </div>
         </div> <!-- row -->
     </div> <!-- container -->
 </section>
-
 <!--====== PAGE BANNER PART ENDS ======-->
 <!--====== EVENT PART START ======-->
-
-<section class="event_area_2 pt-100 pb-130">
+<section class="about_area  pb-130">
     <div class="services_shape_1" style="background-image: url(assets/images/shape/shape-12.png)"></div>
     <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="about_image mt-50">
+                    <div class="image_1">
+                        <img src="/assets/images/countries/conference.webp" alt="about">
+                    </div>
+                    <div class="image_2">
+                        <img src="/assets/images/countries/conference1.webp" alt="about">
+
+                    </div>
+                </div> <!-- about image -->
+            </div>
+            <div class="col-lg-6">
+                <div class="about_content_3 mt-45">
+                    <h3 class="about_title">(PABS) Conference events </h3>
+                    <p>
+                        Welcome to the Events page of the Pan African Burn Society (PABS). Our events serve as a cornerstone for fostering collaboration, knowledge exchange, and innovation in the field of burn care and prevention. Recognizing the profound impact of burns as a global health challenge, our gatherings bring together leading experts, healthcare professionals, researchers, policymakers, and community advocates to address pressing issues and drive progress.
+                    </p>
+                </div> <!-- about image -->
+            </div>
+        </div> <!-- row -->
+    </div> <!-- container -->
+</section>
+<section class="event_area_2 pt-100 pb-130">
+    <div class="services_shape_1" style="background-image: url(assets/images/shape/shape-3.png)"></div>
+    <div class="container">
+        <h3 class="m-10">Past PSBS conferences</h3>
+
         <div class="row">
             <div class="col-lg-4 col-md-6">
                 <div class="single_event event_color-1 mt-30">
                     <div class="event_image">
-                        <img src="assets/images/event-1.jpg" alt="event">
+                        <img src="/assets/images/countries/usa.jpg" alt="event">
                         <div class="event_date d-flex align-items-center justify-content-center">
                             <img class="shape" src="assets/images/shape/shape-3.png" alt="shape">
-                            <span class="date"><span>13</span> Dec</span>
+                            <span class="date"> 2019 </span>
                         </div>
                     </div>
                     <div class="event_content">
-                        <h4 class="event_title"><a href="#">4th Annual Schoolyard Dash 5K</a></h4>
-                        <p><img src="assets/images/map.png" alt="map"> <span>2018/12/28 00:00 69 Warren Street, New York, USA</span> </p>
-                        <a href="#" class="more">Read More</a>
+                        <p><img src="assets/images/map.png" alt="map"> <span>Nineteenth Congress Miami, USA</span> </p>
+                    
                     </div>
                 </div> <!-- single event -->
             </div>
-
+            
             <div class="col-lg-4 col-md-6">
-                <div class="single_event event_color-2 mt-30">
+                <div class="single_event event_color-1 mt-30">
                     <div class="event_image">
-                        <img src="assets/images/event-2.jpg" alt="event">
+                        <img src="assets/images/countries/australia.jpg" alt="event">
                         <div class="event_date d-flex align-items-center justify-content-center">
                             <img class="shape" src="assets/images/shape/shape-3.png" alt="shape">
-                            <span class="date"><span>13</span> Dec</span>
+                            <span class="date"> 2014 </span>
                         </div>
                     </div>
                     <div class="event_content">
-                        <h4 class="event_title"><a href="#">A wooden fishing boat rests on Deal in Kent</a></h4>
-                        <p><img src="assets/images/map.png" alt="map"> <span>2018/12/28 00:00 69 Warren Street, New York, USA</span> </p>
-                        <a href="#" class="more">Read More</a>
-                    </div>
-                </div> <!-- single event -->
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div class="single_event event_color-3 mt-30">
-                    <div class="event_image">
-                        <img src="assets/images/event-3.jpg" alt="event">
-                        <div class="event_date d-flex align-items-center justify-content-center">
-                            <img class="shape" src="assets/images/shape/shape-3.png" alt="shape">
-                            <span class="date"><span>13</span> Dec</span>
-                        </div>
-                    </div>
-                    <div class="event_content">
-                        <h4 class="event_title"><a href="#">4th Annual Schoolyard Dash 5K</a></h4>
-                        <p><img src="assets/images/map.png" alt="map"> <span>2018/12/28 00:00 69 Warren Street, New York, USA</span> </p>
-                        <a href="#" class="more">Read More</a>
+                        <p><img src="assets/images/map.png" alt="map"> <span>Seventeenth Congress Sydney, Australia</span> </p>
+                    
                     </div>
                 </div> <!-- single event -->
             </div>
@@ -80,61 +91,199 @@
             <div class="col-lg-4 col-md-6">
                 <div class="single_event event_color-1 mt-30">
                     <div class="event_image">
-                        <img src="assets/images/event-3.jpg" alt="event">
+                        <img src="/assets/images/countries/Scottland.jpg" alt="event">
                         <div class="event_date d-flex align-items-center justify-content-center">
                             <img class="shape" src="assets/images/shape/shape-3.png" alt="shape">
-                            <span class="date"><span>13</span> Dec</span>
+                            <span class="date"> 2012</span>
                         </div>
                     </div>
                     <div class="event_content">
-                        <h4 class="event_title"><a href="#">4th Annual Schoolyard Dash 5K</a></h4>
-                        <p><img src="assets/images/map.png" alt="map"> <span>2018/12/28 00:00 69 Warren Street, New York, USA</span> </p>
-                        <a href="#" class="more">Read More</a>
+                        <p><img src="assets/images/map.png" alt="map"> <span>Sixteenth Congress Edinburgh, Scotland </span> </p>
                     </div>
                 </div> <!-- single event -->
             </div>
 
             <div class="col-lg-4 col-md-6">
-                <div class="single_event event_color-2 mt-30">
+                <div class="single_event event_color-1 mt-30">
                     <div class="event_image">
-                        <img src="assets/images/event-3.jpg" alt="event">
+                        <img src="~/assets/images/countries/turkey.jpg" alt="event">
                         <div class="event_date d-flex align-items-center justify-content-center">
                             <img class="shape" src="assets/images/shape/shape-3.png" alt="shape">
-                            <span class="date"><span>13</span> Dec</span>
+                            <span class="date">  2010</span>
                         </div>
                     </div>
                     <div class="event_content">
-                        <h4 class="event_title"><a href="#">4th Annual Schoolyard Dash 5K</a></h4>
-                        <p><img src="assets/images/map.png" alt="map"> <span>2018/12/28 00:00 69 Warren Street, New York, USA</span> </p>
-                        <a href="#" class="more">Read More</a>
+                        <p><img src="assets/images/map.png" alt="map"> <span> Fifteenth Congress Istanbul Turkey </span> </p>
+                    </div>
+                </div> <!-- single event -->
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single_event event_color-1 mt-30">
+                    <div class="event_image">
+                        <img src="~/assets/images/countries/canada.jpg" alt="event">
+                        <div class="event_date d-flex align-items-center justify-content-center">
+                            <img class="shape" src="assets/images/shape/shape-3.png" alt="shape">
+                            <span class="date">  2008</span>
+                        </div>
+                    </div>
+                    <div class="event_content">
+                        <p>
+                            <img src="assets/images/map.png" alt="map"> <span>
+                                Fourteenth Congress Montreal, Canada
+                            </span>
+                        </p>
+                    </div>
+                </div> <!-- single event -->
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single_event event_color-1 mt-30">
+                    <div class="event_image">
+                        <img src="~/assets/images/countries/brazil.jpg" alt="event">
+                        <div class="event_date d-flex align-items-center justify-content-center">
+                            <img class="shape" src="assets/images/shape/shape-3.png" alt="shape">
+                            <span class="date">  2006</span>
+                        </div>
+                    </div>
+                    <div class="event_content">
+                        <p><img src="assets/images/map.png" alt="map"> <span> Thirteenth Congress Fortaleza, Brazil </span> </p>
+                    </div>
+                </div> <!-- single event -->
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single_event event_color-1 mt-30">
+                    <div class="event_image">
+                        <img src="~/assets/images/countries/japan.jpeg" alt="event">
+                        <div class="event_date d-flex align-items-center justify-content-center">
+                            <img class="shape" src="assets/images/shape/shape-3.png" alt="shape">
+                            <span class="date">  2004</span>
+                        </div>
+                    </div>
+                    <div class="event_content">
+                        <p><img src="assets/images/map.png" alt="map"> <span> Twelfth Congress Yokohama, Japan </span> </p>
+                    </div>
+                </div> <!-- single event -->
+            </div>   
+            <div class="col-lg-4 col-md-6">
+                <div class="single_event event_color-1 mt-30">
+                    <div class="event_image">
+                        <img src="~/assets/images/countries/usa.jpg" alt="event">
+                        <div class="event_date d-flex align-items-center justify-content-center">
+                            <img class="shape" src="assets/images/shape/shape-3.png" alt="shape">
+                            <span class="date">  2002</span>
+                        </div>
+                    </div>
+                    <div class="event_content">
+                        <p>
+                            <img src="assets/images/map.png" alt="map"> <span>
+                                Eleventh Congress Seattle, Washington, USA
+                            </span>
+                        </p>
+                    </div>
+                </div> <!-- single event -->
+            </div> <div class="col-lg-4 col-md-6">
+                <div class="single_event event_color-1 mt-30">
+                    <div class="event_image">
+                        <img src="~/assets/images/countries/israel.jpg" alt="event">
+                        <div class="event_date d-flex align-items-center justify-content-center">
+                            <img class="shape" src="assets/images/shape/shape-3.png" alt="shape">
+                            <span class="date">  1998</span>
+                        </div>
+                    </div>
+                    <div class="event_content">
+                        <p><img src="assets/images/map.png" alt="map"> <span> Tenth Congress Jerusalem, Israel </span> </p>
+                    </div>
+                </div> <!-- single event -->
+            </div><div class="col-lg-4 col-md-6">
+                <div class="single_event event_color-1 mt-30">
+                    <div class="event_image">
+                        <img src="~/assets/images/countries/france.jpg" alt="event">
+                        <div class="event_date d-flex align-items-center justify-content-center">
+                            <img class="shape" src="assets/images/shape/shape-3.png" alt="shape">
+                            <span class="date">  1994</span>
+                        </div>
+                    </div>
+                    <div class="event_content">
+                        <p><img src="assets/images/map.png" alt="map"> <span>Ninth Congress Paris, France </span> </p>
+                    </div>
+                </div> <!-- single event -->
+            </div><div class="col-lg-4 col-md-6">
+                <div class="single_event event_color-1 mt-30">
+                    <div class="event_image">
+                        <img src="~/assets/images/countries/india.jpg" alt="event">
+                        <div class="event_date d-flex align-items-center justify-content-center">
+                            <img class="shape" src="assets/images/shape/shape-3.png" alt="shape">
+                            <span class="date">  1990</span>
+                        </div>
+                    </div>
+                    <div class="event_content">
+                        <p>
+                            <img src="assets/images/map.png" alt="map"> <span>
+                                Eighth Congress New Delhi, India
+                            </span>
+                        </p>
+                    </div>
+                </div> <!-- single event -->
+            </div><div class="col-lg-4 col-md-6">
+                <div class="single_event event_color-1 mt-30">
+                    <div class="event_image">
+                        <img src="~/assets/images/countries/australia.jpg" alt="event">
+                        <div class="event_date d-flex align-items-center justify-content-center">
+                            <img class="shape" src="assets/images/shape/shape-3.png" alt="shape">
+                            <span class="date">  1986</span>
+                        </div>
+                    </div>
+                    <div class="event_content">
+                        <p><img src="assets/images/map.png" alt="map"> <span>Seventh Congress Melbourne, Australia </span> </p>
+                    </div>
+                </div> <!-- single event -->
+            </div><div class="col-lg-4 col-md-6">
+                <div class="single_event event_color-1 mt-30">
+                    <div class="event_image">
+                        <img src="~/assets/images/countries/sweden.webp" alt="event">
+                        <div class="event_date d-flex align-items-center justify-content-center">
+                            <img class="shape" src="assets/images/shape/shape-3.png" alt="shape">
+                            <span class="date">  1978</span>
+                        </div>
+                    </div>
+                    <div class="event_content">
+                        <p><img src="assets/images/map.png" alt="map"> <span>Fifth Congress Stockholm, Sweden </span> </p>
+                    </div>
+                </div> <!-- single event -->
+            </div><div class="col-lg-4 col-md-6">
+                <div class="single_event event_color-1 mt-30">
+                    <div class="event_image">
+                        <img src="~/assets/images/countries/argentina.jpeg" alt="event">
+                        <div class="event_date d-flex align-items-center justify-content-center">
+                            <img class="shape" src="assets/images/shape/shape-3.png" alt="shape">
+                            <span class="date">  1974</span>
+                        </div>
+                    </div>
+                    <div class="event_content">
+                        <p><img src="assets/images/map.png" alt="map"> <span>Fourth Congress Buenos Aires, Argentina </span> </p>
+                    </div>
+                </div> <!-- single event -->
+            </div><div class="col-lg-4 col-md-6">
+                <div class="single_event event_color-1 mt-30">
+                    <div class="event_image">
+                        <img src="~/assets/images/countries/Czechoslovakia.webp" alt="event">
+                        <div class="event_date d-flex align-items-center justify-content-center">
+                            <img class="shape" src="assets/images/shape/shape-3.png" alt="shape">
+                            <span class="date">  1970</span>
+                        </div>
+                    </div>
+                    <div class="event_content">
+                        <p><img src="assets/images/map.png" alt="map"> <span>Third Congress Prague, Czechoslovakia </span> </p>
                     </div>
                 </div> <!-- single event -->
             </div>
 
-            <div class="col-lg-4 col-md-6">
-                <div class="single_event event_color-3 mt-30">
-                    <div class="event_image">
-                        <img src="assets/images/event-3.jpg" alt="event">
-                        <div class="event_date d-flex align-items-center justify-content-center">
-                            <img class="shape" src="assets/images/shape/shape-3.png" alt="shape">
-                            <span class="date"><span>13</span> Dec</span>
-                        </div>
-                    </div>
-                    <div class="event_content">
-                        <h4 class="event_title"><a href="#">4th Annual Schoolyard Dash 5K</a></h4>
-                        <p><img src="assets/images/map.png" alt="map"> <span>2018/12/28 00:00 69 Warren Street, New York, USA</span> </p>
-                        <a href="#" class="more">Read More</a>
-                    </div>
-                </div> <!-- single event -->
-            </div>
         </div> <!-- row -->
         <div class="row">
             <div class="col-lg-12">
                 <ul class="pagination justify-content-center mt-50">
                     <li class="page-item"><a href="#"><i class="fa fa-angle-left"></i></a></li>
                     <li class="page-item"><a class="active" href="#">1</a></li>
-                    <li class="page-item"><a href="#">2</a></li>
-                    <li class="page-item"><a href="#">3</a></li>
+                    
                     <li class="page-item"><a href="#"><i class="fa fa-angle-right"></i></a></li>
                 </ul> <!-- pagination -->
             </div>

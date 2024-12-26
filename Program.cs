@@ -1,4 +1,9 @@
+using BurnSociety.Application;
+using Microsoft.EntityFrameworkCore;
+using Serilog.Context;
+
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
+
 
 builder.CreateUmbracoBuilder()
     .AddBackOffice()
@@ -6,6 +11,7 @@ builder.CreateUmbracoBuilder()
     .AddDeliveryApi()
     .AddComposers()
     .Build();
+builder.Services.AddDbContext<ApplicationDBContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("umbracoDbDSN")));
 
 WebApplication app = builder.Build();
 
